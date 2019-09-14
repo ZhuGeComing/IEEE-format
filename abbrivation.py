@@ -1,5 +1,9 @@
+#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+# author:HenryLiu
+# datetime:2019/9/14 下午 08:43
+# Function:IEEE-transform
 
-# coding: utf-8
 
 import pandas as pd
 import re
