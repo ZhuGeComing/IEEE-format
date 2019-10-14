@@ -17,6 +17,12 @@ python abbrivation.py
 
 
 
+2019-10-14
+
+在matlab上进行了实现，如果有需要请在A.csv和B.csv中添加最新的IEEE的缩写。
+
+
+
 
 
 现在版本：
