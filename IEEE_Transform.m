@@ -1,12 +1,12 @@
 %%  修改IEEE-Journal的简写
 % author:HenryLiu
-%  datetime:2019/9/14 下午 08:43
+%  datetime:2019/10/14 下午 08:43
 %  Function:IEEE-transform
 %%输入文献为'Ref.bib'，输出文献为'new.bib'
 filecontent = importdata('Ref.bib');
 
-refcontent = readtable("A.csv")
-abbrcontent = readtable("B.csv")
+refcontent = readtable("A.csv");
+abbrcontent = readtable("B.csv");
 
 for i = 1:size(filecontent, 1)
     test = regexpi(filecontent{i}, 'journal');
@@ -48,5 +48,5 @@ for i = 1:size(filecontent, 1)
  
     end
 end
-writecell(filecontent, 'new.txt',"QuoteStrings",false)
-eval(['!rename',',new.txt,' ',new.bib'])
+writetable(cell2table(filecontent), 'new.txt',"QuoteStrings",false,"WriteVariableNames",false);
+eval(['!rename',',new.txt,' ',new.bib']);
